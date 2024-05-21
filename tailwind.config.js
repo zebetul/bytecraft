@@ -5,6 +5,14 @@ export const content = [
 ]
 export const theme = {
   extend: {
+    colors: {
+      primary: "#175073",
+      primaryLight: "#CCECFF",
+      textColor: "#071A25",
+      accent: "#E97934",
+      accentLight: "#FF8439",
+    },
+
     fontFamily: {
       title: [`Roboto`, "sans-serif"],
       body: [`"Open sans"`, "sans-serif"],

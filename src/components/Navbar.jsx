@@ -1,25 +1,44 @@
-import React from "react"
+import * as React from "react"
+import { useState } from "react"
 import { Link } from "gatsby"
-import LogoImage from "../assets/icons/logo.svg"
+
+import LogoSvg from "../assets/icons/logo.svg"
+import Menu from "../assets/icons/menu.svg"
+import Close from "../assets/icons/close.svg"
+import NavLinks from "./NavLinks"
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex justify-between items-start">
       <Link className="nav_logo" to="/">
-        <LogoImage className="h-20" />
+        <LogoSvg className="h-min w-8" />
       </Link>
 
-      <ul className="flex gap-5">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/services">Services</Link>
-        </li>
+      <ul className="hidden md:flex transition-all duration-300">
+        <NavLinks />
       </ul>
+
+      <div className="md:hidden">
+        <button className="nav_button relative p-2 z-10" onClick={toggleMenu}>
+          {isOpen ? (
+            <Close className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      {isOpen && (
+        <ul className="absolute left-0 top-0 flex flex-col bg-white w-full transition-all duration-300 pt-5">
+          <NavLinks />
+        </ul>
+      )}
     </nav>
   )
 }

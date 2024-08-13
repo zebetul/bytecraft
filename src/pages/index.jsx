@@ -2,12 +2,14 @@ import * as React from "react"
 
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
+import SectionHero from "../components/index/SectionHero"
+import TechBanner from "../components/index/TechBanner"
 
 const IndexPage = () => (
   <Layout>
-    <div className="">
-      <h1 className="py-60">Home</h1>
-    </div>
+    <SectionHero />
+
+    <TechBanner />
   </Layout>
 )
 

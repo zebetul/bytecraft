@@ -7,10 +7,15 @@ export const theme = {
   extend: {
     colors: {
       primary: "#175073",
-      primaryLight: "#CCECFF",
-      textColor: "#071A25",
+      primaryLight: "#52BDFF",
+      primaryDark: "#113C55",
+
+      foreground: "#071A25",
+      muted: "#6B7280",
+
       accent: "#E97934",
       accentLight: "#FF8439",
+      accentDark: "#D85B1F",
     },
 
     fontFamily: {

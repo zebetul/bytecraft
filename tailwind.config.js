@@ -22,6 +22,16 @@ export const theme = {
       title: [`Roboto`, "sans-serif"],
       body: [`"Open sans"`, "sans-serif"],
     },
+
+    animation: {
+      scroll: "scroll 40s linear infinite",
+    },
+    keyframes: {
+      scroll: {
+        "0%": { transform: "translateX(0)" },
+        "100%": { transform: "translateX(-100%)" },
+      },
+    },
   },
 }
 export const plugins = []

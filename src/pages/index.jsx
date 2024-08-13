@@ -4,12 +4,15 @@ import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import SectionHero from "../components/index/SectionHero"
 import TechBanner from "../components/index/TechBanner"
+import SectionPlanning from "../components/index/SectionPlanning"
 
 const IndexPage = () => (
   <Layout>
     <SectionHero />
 
     <TechBanner />
+
+    <SectionPlanning />
   </Layout>
 )
 

@@ -13,7 +13,7 @@ const Button = ({
 }) => {
   // Determine the base styles
   const baseStyles =
-    "inline-flex items-center justify-center font-semibold transition duration-200 ease-in-out focus:outline-none"
+    "inline-flex items-center justify-center font-semibold transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary focus:ring-primary"
 
   // Define variant styles
   const variantStyles = {

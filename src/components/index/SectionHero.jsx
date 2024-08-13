@@ -9,7 +9,7 @@ const SectionHero = () => {
   return (
     <Section>
       <div className="flex flex-col justify-center items-center lg:items-start lg:pl-32">
-        <div className="max-w-xl flex flex-col">
+        <div className="max-w-xl flex flex-col items-center lg:items-start">
           <Heading1>{JSONContent.hero.title}</Heading1>
 
           <Paragraph>{JSONContent.hero.description}</Paragraph>

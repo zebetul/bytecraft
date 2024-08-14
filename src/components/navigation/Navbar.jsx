@@ -8,7 +8,7 @@ import MobileNavSidebar from "./MobileNavSidebar"
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-20 w-full flex justify-between items-center bg-white border border-b-2 py-2">
+    <nav className="fixed z-20 w-full flex justify-between items-center bg-white border-b py-2">
       <Link className="nav_logo ml-4" to="/">
         <LogoSvg className="h-min w-24" />
       </Link>

@@ -24,7 +24,7 @@ const icons = [
 
 function TechBanner() {
   return (
-    <div className="w-full mb-20 border py-10 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
+    <div className="w-full mb-20 border-y py-10 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
       <p className="w-full lg:w-2/5 my-auto text-3xl lg:text-4xl lg:pl-32 text-center lg:text-start">
         Best solutions
         <span className="block">for every use case</span>

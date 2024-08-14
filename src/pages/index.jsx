@@ -16,12 +16,13 @@ import Development4 from "../assets/icons/development/icon-dev-4.svg"
 import Seo from "../components/seo"
 import JSONContent from "../assets/content/content.json"
 import Layout from "../components/Layout"
-import SectionHero from "../components/index/SectionHero"
 import TechBanner from "../components/index/TechBanner"
-import SectionPlanning from "../components/index/SectionPlanning"
 import BenefitCard from "../components/index/BenefitCard"
-import SectionDesign from "../components/index/SectionDesign"
-import SectionDevelopment from "../components/index/SectionDevelopment"
+import Section from "../components/ui/Section"
+import Heading2 from "../components/ui/Heading2"
+import Paragraph2 from "../components/ui/Paragraph2"
+import Heading1 from "../components/ui/Heading1"
+import Paragraph1 from "../components/ui/Paragraph1"
 
 const icons = {
   planning: [
@@ -48,13 +49,33 @@ const icons = {
 
 const IndexPage = () => (
   <Layout>
-    <SectionHero />
+    {/* SECTION HERO  */}
+    <Section
+      title={JSONContent.hero.title}
+      description={JSONContent.hero.description}
+      svgGraphic={true}
+      buttonText="Request an offer"
+      buttonLink="/contact"
+      headingType={Heading1}
+      paragraphType={Paragraph1}
+    />
 
     <TechBanner />
 
-    <SectionPlanning />
+    {/* SECTION PLANNING */}
+    <Section
+      title={JSONContent.sections.planning.title}
+      description={JSONContent.sections.planning.description}
+      svgGraphic={true}
+      buttonText="Request an offer"
+      buttonLink="/contact"
+      headingType={Heading2}
+      paragraphType={Paragraph2}
+      reverse={true}
+    />
 
-    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    {/* List of benefits for planning */}
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border">
       {JSONContent.sections.planning.benefits.map((benefit, index) => (
         <BenefitCard
           key={index}
@@ -64,17 +85,42 @@ const IndexPage = () => (
       ))}
     </ul>
 
-    <SectionDesign />
+    {/* SECTION DESIGN */}
+    <Section
+      title={JSONContent.sections.design.title}
+      description={JSONContent.sections.design.description}
+      svgGraphic={true}
+      buttonText="Request an offer"
+      buttonLink="/contact"
+      bgColor="bg-primary"
+      headerTextColor="text-white"
+      paragraphTextColor="text-blue-200"
+      headingType={Heading2}
+      paragraphType={Paragraph2}
+      imgBgColor="bg-primaryLight"
+    />
 
-    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    {/* List of benefits for design */}
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border">
       {JSONContent.sections.design.benefits.map((benefit, index) => (
         <BenefitCard key={index} benefit={benefit} icon={icons.design[index]} />
       ))}
     </ul>
 
-    <SectionDevelopment />
+    {/* SECTION DEVELOPMENT */}
+    <Section
+      title={JSONContent.sections.development.title}
+      description={JSONContent.sections.development.description}
+      svgGraphic={true}
+      buttonText="Request an offer"
+      buttonLink="/contact"
+      headingType={Heading2}
+      paragraphType={Paragraph2}
+      reverse={true}
+    />
 
-    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    {/* List of benefits for development */}
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border">
       {JSONContent.sections.development.benefits.map((benefit, index) => (
         <BenefitCard
           key={index}

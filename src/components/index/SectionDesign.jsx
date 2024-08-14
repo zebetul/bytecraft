@@ -10,10 +10,14 @@ function SectionDesign() {
   return (
     <Section>
       <div className="min-h-[600px] lg:min-h-[800px] flex flex-col justify-center items-center lg:items-start bg-primary">
-        <div className="max-w-lg mx-auto flex flex-col items-center lg:items-start px-4 text-white">
-          <Heading2>{JSONContent.sections.design.title}</Heading2>
+        <div className="max-w-lg mx-auto flex flex-col items-center lg:items-start px-4">
+          <Heading2 className="text-white">
+            {JSONContent.sections.design.title}
+          </Heading2>
 
-          <Paragraph2>{JSONContent.sections.design.description}</Paragraph2>
+          <Paragraph2 className="text-gray-300">
+            {JSONContent.sections.design.description}
+          </Paragraph2>
 
           <Button
             to="/contact"

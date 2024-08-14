@@ -8,9 +8,9 @@ import MobileNavSidebar from "./MobileNavSidebar"
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-start">
-      <Link className="nav_logo" to="/">
-        <LogoSvg className="h-min w-8" />
+    <nav className="fixed z-20 w-full flex justify-between items-center bg-white border border-b-2 py-2">
+      <Link className="nav_logo ml-4" to="/">
+        <LogoSvg className="h-min w-24" />
       </Link>
 
       <ul className="hidden md:flex flex-row">

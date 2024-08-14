@@ -5,14 +5,16 @@ import Heading2 from "../ui/Heading2"
 import Paragraph2 from "../ui/Paragraph2"
 import Button from "../ui/Button"
 
-function SectionPlanning() {
+function SectionDevelopment() {
   return (
     <Section>
       <div className="min-h-[600px] lg:min-h-[800px] lg:order-2 flex flex-col justify-center items-center lg:items-start">
         <div className="max-w-lg mx-auto flex flex-col items-center lg:items-start px-4">
-          <Heading2>{JSONContent.sections.planning.title}</Heading2>
+          <Heading2>{JSONContent.sections.development.title}</Heading2>
 
-          <Paragraph2>{JSONContent.sections.planning.description}</Paragraph2>
+          <Paragraph2>
+            {JSONContent.sections.development.description}
+          </Paragraph2>
 
           <Button
             to="/contact"
@@ -32,4 +34,4 @@ function SectionPlanning() {
   )
 }
 
-export default SectionPlanning
+export default SectionDevelopment

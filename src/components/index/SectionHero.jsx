@@ -3,16 +3,16 @@ import JSONContent from "../../assets/content/content.json"
 import Section from "../ui/Section"
 import Button from "../ui/Button"
 import Heading1 from "../ui/Heading1"
-import Paragraph from "../ui/Paragraph"
+import Paragraph1 from "../ui/Paragraph1"
 
 const SectionHero = () => {
   return (
     <Section>
-      <div className="flex flex-col justify-center items-center lg:items-start lg:pl-32">
-        <div className="max-w-xl flex flex-col items-center lg:items-start">
+      <div className="min-h-[600px] lg:min-h-[800px] flex flex-col justify-center items-center lg:items-start">
+        <div className="max-w-lg mx-auto flex flex-col items-center lg:items-start px-4">
           <Heading1>{JSONContent.hero.title}</Heading1>
 
-          <Paragraph>{JSONContent.hero.description}</Paragraph>
+          <Paragraph1>{JSONContent.hero.description}</Paragraph1>
 
           <Button
             to="/contact"
@@ -25,7 +25,7 @@ const SectionHero = () => {
         </div>
       </div>
 
-      <div className="h-full w-full grid place-items-center">
+      <div className="min-h-[600px] lg:min-h-[800px] h-full w-full grid place-items-center">
         <h1 className="image_placeholder bg-blue-200 w-[300px] h-[300px]"></h1>
       </div>
     </Section>

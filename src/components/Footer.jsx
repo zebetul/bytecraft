@@ -7,10 +7,10 @@ import LinkedinIcon from "../assets/icons/social/linkedin.svg"
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-end">
+    <footer className="flex justify-between items-end px-4">
       <div className="flex">
         <a
-          className="ml-5"
+          className="mr-5"
           href="https://www.linkedin.com"
           target="_blank"
           rel="noreferrer"
@@ -19,7 +19,7 @@ const Footer = () => {
         </a>
 
         <a
-          className="ml-5"
+          className="mr-5"
           href="https://www.facebook.com"
           target="_blank"
           rel="noreferrer"
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
 
       <Link className="nav_logo" to="/">
-        <LogoSvg className="h-min w-10" />
+        <LogoSvg className="h-min w-32" />
       </Link>
     </footer>
   )

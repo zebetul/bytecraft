@@ -23,6 +23,8 @@ import Heading2 from "../components/ui/Heading2"
 import Paragraph2 from "../components/ui/Paragraph2"
 import Heading1 from "../components/ui/Heading1"
 import Paragraph1 from "../components/ui/Paragraph1"
+import HeroSVGAnimation from "../components/animations/HeroSVGAnimation"
+import PlanningSvgAnimation from "../components/animations/PlanningSvgAnimation"
 
 const icons = {
   planning: [
@@ -53,7 +55,7 @@ const IndexPage = () => (
     <Section
       title={JSONContent.hero.title}
       description={JSONContent.hero.description}
-      svgGraphic={true}
+      svgGraphic={HeroSVGAnimation}
       buttonText="Request an offer"
       buttonLink="/contact"
       headingType={Heading1}
@@ -66,7 +68,7 @@ const IndexPage = () => (
     <Section
       title={JSONContent.sections.planning.title}
       description={JSONContent.sections.planning.description}
-      svgGraphic={true}
+      svgGraphic={PlanningSvgAnimation}
       buttonText="Request an offer"
       buttonLink="/contact"
       headingType={Heading2}
@@ -89,12 +91,12 @@ const IndexPage = () => (
     <Section
       title={JSONContent.sections.design.title}
       description={JSONContent.sections.design.description}
-      svgGraphic={true}
+      // svgGraphic={true}
       buttonText="Request an offer"
       buttonLink="/contact"
       bgColor="bg-primary"
       headerTextColor="text-white"
-      paragraphTextColor="text-blue-200"
+      paragraphTextColor="text-gray-200"
       headingType={Heading2}
       paragraphType={Paragraph2}
       imgBgColor="bg-primaryLight"
@@ -111,7 +113,7 @@ const IndexPage = () => (
     <Section
       title={JSONContent.sections.development.title}
       description={JSONContent.sections.development.description}
-      svgGraphic={true}
+      // svgGraphic={true}
       buttonText="Request an offer"
       buttonLink="/contact"
       headingType={Heading2}

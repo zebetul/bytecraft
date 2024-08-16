@@ -5,7 +5,7 @@ import Button from "./Button"
 function Section({
   title,
   description,
-  svgGraphic,
+  svgGraphic: Image,
   buttonText,
   buttonLink,
   bgColor,
@@ -41,14 +41,12 @@ function Section({
 
       <div
         className={clsx(
-          "min-h-[600px] lg:min-h-[800px] h-full w-full grid place-items-center",
+          "min-h-[800px] h-full w-full grid place-items-center overflow-x-hidden",
           imgBgColor,
           reverse ? "lg:order-1" : "lg:order-2"
         )}
       >
-        {svgGraphic && (
-          <h1 className="image_placeholder w-[300px] h-[300px] bg-gray-300"></h1>
-        )}
+        {Image && <Image />}
       </div>
     </section>
   )

@@ -8,16 +8,18 @@ import MobileNavSidebar from "./MobileNavSidebar"
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-20 w-full flex justify-between items-center bg-white border-b py-2">
-      <Link className="nav_logo ml-4" to="/">
-        <LogoSvg className="h-min w-24" />
-      </Link>
+    <nav className="fixed z-20 w-full bg-white border-b py-2">
+      <div className=" max-w-[1800px] mx-auto flex justify-between items-center">
+        <Link className="nav_logo ml-4" to="/">
+          <LogoSvg className="h-min w-24" />
+        </Link>
 
-      <ul className="hidden md:flex flex-row">
-        <NavLinks />
-      </ul>
+        <ul className="hidden md:flex flex-row">
+          <NavLinks />
+        </ul>
 
-      <MobileNavSidebar />
+        <MobileNavSidebar />
+      </div>
     </nav>
   )
 }

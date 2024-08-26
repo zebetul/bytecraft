@@ -24,7 +24,7 @@ export const theme = {
     },
 
     animation: {
-      scroll: "scroll 20s linear infinite",
+      scroll: "scroll 26s linear infinite",
     },
     keyframes: {
       scroll: {

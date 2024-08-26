@@ -1,24 +1,30 @@
 import * as React from "react"
 
-import CssSvg from "../../assets/icons/tech/css.svg"
-import FigmaSvg from "../../assets/icons/tech/figma.svg"
-import GatsbySvg from "../../assets/icons/tech/gatsby.svg"
-import GithubSvg from "../../assets/icons/tech/github.svg"
 import HtmlSvg from "../../assets/icons/tech/html.svg"
+import CssSvg from "../../assets/icons/tech/css.svg"
 import JsSvg from "../../assets/icons/tech/js.svg"
+import GatsbySvg from "../../assets/icons/tech/gatsby.svg"
+import ReactSvg from "../../assets/icons/tech/reactIcon.svg"
+import NextSvg from "../../assets/icons/tech/next.svg"
+import SupabaseSvg from "../../assets/icons/tech/supabase.svg"
+import PostgresSvg from "../../assets/icons/tech/postgres.svg"
+import FigmaSvg from "../../assets/icons/tech/figma.svg"
+import GithubSvg from "../../assets/icons/tech/github.svg"
 import OpenaiSvg from "../../assets/icons/tech/openai.svg"
-import ReactSvg from "../../assets/icons/tech/react.svg"
 import VscSvg from "../../assets/icons/tech/vsc.svg"
 
 const icons = [
   <CssSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
-  <FigmaSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
-  <GatsbySvg className="h-10 w-10 lg:h-12 lg:w-12" />,
-  <GithubSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
   <HtmlSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
   <JsSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
+  <ReactSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
+  <GatsbySvg className="h-10 w-10 lg:h-12 lg:w-12" />,
+  <NextSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
+  <SupabaseSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
+  <PostgresSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
+  <FigmaSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
+  <GithubSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
   <OpenaiSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
-  // <ReactSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
   <VscSvg className="h-10 w-10 lg:h-12 lg:w-12" />,
 ]
 

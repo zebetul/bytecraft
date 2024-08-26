@@ -1,4 +1,7 @@
 import * as React from "react"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { MotionPathPlugin } from "gsap/MotionPathPlugin"
 
 import Planning1 from "../assets/icons/planning/icon-planning-1.svg"
 import Planning2 from "../assets/icons/planning/icon-planning-2.svg"
@@ -25,6 +28,11 @@ import Heading1 from "../components/ui/Heading1"
 import Paragraph1 from "../components/ui/Paragraph1"
 import HeroSVGAnimation from "../components/animations/HeroSVGAnimation"
 import PlanningSvgAnimation from "../components/animations/PlanningSvgAnimation"
+import DesignSVGAnimation from "../components/animations/DesignSVGAnimation"
+import DevelopmentSVGAnimation from "../components/animations/DevelopmentSvgAnimation"
+
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(MotionPathPlugin)
 
 const icons = {
   planning: [
@@ -91,7 +99,7 @@ const IndexPage = () => (
     <Section
       title={JSONContent.sections.design.title}
       description={JSONContent.sections.design.description}
-      // svgGraphic={true}
+      svgGraphic={DesignSVGAnimation}
       buttonText="Request an offer"
       buttonLink="/contact"
       bgColor="bg-primary"
@@ -113,7 +121,7 @@ const IndexPage = () => (
     <Section
       title={JSONContent.sections.development.title}
       description={JSONContent.sections.development.description}
-      // svgGraphic={true}
+      svgGraphic={DevelopmentSVGAnimation}
       buttonText="Request an offer"
       buttonLink="/contact"
       headingType={Heading2}

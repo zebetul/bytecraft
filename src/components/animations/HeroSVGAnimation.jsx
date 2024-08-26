@@ -1,14 +1,11 @@
 import * as React from "react"
 import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
 import CircleSvg from "../../assets/graphics/hero/circle.svg"
 import Square1Svg from "../../assets/graphics/hero/square-1.svg"
 import Square2Svg from "../../assets/graphics/hero/square-2.svg"
 import Square3Svg from "../../assets/graphics/hero/square-3.svg"
 import Square4Svg from "../../assets/graphics/hero/square-4.svg"
 import Ellipse from "../../assets/graphics/hero/ellipse.svg"
-
-gsap.registerPlugin(ScrollTrigger)
 
 function HeroSVGAnimation() {
   React.useEffect(() => {

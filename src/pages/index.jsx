@@ -107,7 +107,7 @@ const IndexPage = () => (
       paragraphTextColor="text-gray-200"
       headingType={Heading2}
       paragraphType={Paragraph2}
-      imgBgColor="bg-primaryLight"
+      imgBgColor="bg-primary"
     />
 
     {/* List of benefits for design */}

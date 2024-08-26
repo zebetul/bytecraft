@@ -10,6 +10,10 @@ export const theme = {
       primaryLight: "#52BDFF",
       primaryDark: "#113C55",
 
+      secondary: "#FFA6A6",
+      tertiary: "#9BA6DE",
+      quaternary: "#CCECFF",
+
       foreground: "#071A25",
       muted: "#6B7280",
 

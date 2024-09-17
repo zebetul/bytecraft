@@ -31,8 +31,7 @@ import PlanningSvgAnimation from "../components/animations/PlanningSvgAnimation"
 import DesignSVGAnimation from "../components/animations/DesignSVGAnimation"
 import DevelopmentSVGAnimation from "../components/animations/DevelopmentSvgAnimation"
 
-gsap.registerPlugin(ScrollTrigger)
-gsap.registerPlugin(MotionPathPlugin)
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin)
 
 const icons = {
   planning: [

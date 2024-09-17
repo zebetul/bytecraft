@@ -74,7 +74,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 50%",
         end: "bottom 80%",
-        scrub: 3,
+        scrub: 4,
       },
       rotate: 360,
       y: -200,
@@ -85,7 +85,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 40%",
         end: "bottom 40%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -200,
       rotate: 180,
@@ -96,7 +96,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 80%",
         end: "bottom 70%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -200,
       rotate: -720,
@@ -107,7 +107,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 20%",
         end: "bottom 20%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -200,
       rotate: 360,
@@ -119,7 +119,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 50%",
         end: "bottom 80%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -400,
       rotate: 90,
@@ -130,7 +130,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 70%",
         end: "bottom 80%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -400,
       rotate: -180,
@@ -141,7 +141,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 30%",
         end: "bottom 60%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -400,
       rotate: 180,
@@ -152,7 +152,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 20%",
         end: "bottom 20%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -400,
       rotate: -360,
@@ -164,7 +164,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 70%",
         end: "bottom 80%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -600,
       rotate: 360,
@@ -175,7 +175,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 40%",
         end: "bottom 80%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -600,
       rotate: -180,
@@ -186,10 +186,10 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 20%",
         end: "bottom 0%",
-        scrub: 3,
+        scrub: 4,
       },
       y: -600,
-      rotate: -720,
+      rotate: -180,
       duration: 3,
     })
     gsap.to(".paralax_lg_4", {
@@ -197,7 +197,7 @@ function DesignSVGAnimation() {
         trigger: ".design_animation-container",
         start: "top 0%",
         end: "bottom 0%",
-        scrub: 3,
+        scrub: 4,
         // markers: true,
       },
       y: -600,
@@ -211,9 +211,9 @@ function DesignSVGAnimation() {
       <Ellipse className="ellipse_design_top absolute w-14 h-14 top-0 left-0" />
       <Ellipse className="ellipse_design_bottom absolute w-14 h-14 bottom-0 left-0" />
 
-      <svg className="absolute h-full w-full">
+      {/* <svg className="absolute h-full w-full">
         <path d={path} stroke="black" strokeWidth="1" fill="transparent" />
-      </svg>
+      </svg> */}
 
       <CircleSvg className="circle_design w-10 h-10 absolute top-0 left-0" />
 

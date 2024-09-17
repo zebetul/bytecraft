@@ -18,31 +18,32 @@ function HeroSVGAnimation() {
     // 1. TIME LINE
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".hero_animation-container",
-        start: "bottom 95%",
-        end: "bottom 60%",
-        // markers: true,
+        trigger: ".circle_hero",
+        start: "bottom 50%",
+        endTrigger: ".hero_animation-container",
+        end: "bottom 40%",
+
         scrub: 1,
       },
     })
 
     // a. The bottom two squares slide aside, one on the left and one on the right and
-    tl.to(".square_bl", { x: -100, duration: 0.5 }, 0).to(
+    tl.to(".square_bl", { x: -100, duration: 0.3 }, 0).to(
       ".square_br",
-      { x: 100, duration: 0.5 },
+      { x: 100, duration: 0.3 },
       0
     )
 
     // b. The circle starts rolling down.
-    tl.to(".circle_hero", { y: 450, duration: 1.5, delay: 0.5 }, 0)
+    tl.to(".circle_hero", { y: 450, duration: 0.3, delay: 0.1 }, 0)
 
     // c. The ellipse "opens" and "closes" as the circle rolls down.
     tl.fromTo(
       ".ellipse_hero",
       { scaleX: 0, scaleY: 0 },
-      { scaleX: 1, scaleY: 1, duration: 0.9 },
-      0
-    ).to(".ellipse_hero", { scaleX: 0, scaleY: 0, duration: 0.5 }, 2)
+      { scaleX: 1, scaleY: 1, duration: 0.1 },
+      0.1
+    ).to(".ellipse_hero", { scaleX: 0, scaleY: 0, duration: 0.1 }, 0.4)
   }, [])
 
   return (

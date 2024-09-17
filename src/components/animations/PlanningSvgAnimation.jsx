@@ -23,17 +23,17 @@ function PlanningSvgAnimation() {
     gsap.set(".icon_plan", {
       x: 30,
       y: 240,
-      scale: 0,
+      scale: 0.7,
     })
     gsap.set(".icon_design", {
       x: 240,
       y: 425,
-      scale: 0,
+      scale: 0.7,
     })
     gsap.set(".icon_dev", {
-      x: 30,
+      x: 0,
       y: 620,
-      scale: 0,
+      scale: 0.7,
     })
 
     // 1. CIRCLE ANIMATION
@@ -69,35 +69,30 @@ function PlanningSvgAnimation() {
     ).to(".ellipse_planning_top", { scaleX: 0, scaleY: 0, duration: 0.5 }, 2)
 
     // 3. ICON ANIMATIONS
-    gsap.to(".icon_plan", {
+    const tlIcons = gsap.timeline({
       scrollTrigger: {
-        trigger: ".icon_plan",
-        start: "top 90%",
-        end: "top 75%",
+        trigger: ".planning_animation-container",
+        start: "top 50%",
+        end: "bottom 60%",
         scrub: 1,
       },
+    })
+    tlIcons.to(".icon_plan", {
       scale: 1,
+      opacity: 1,
       duration: 0.5,
     })
-    gsap.to(".icon_design", {
-      scrollTrigger: {
-        trigger: ".icon_design",
-        start: "top 85%",
-        end: "top 70%",
-        scrub: 1,
-      },
+    tlIcons.to(".icon_design", {
       scale: 1,
+      opacity: 1,
       duration: 0.5,
+      delay: 0.5,
     })
-    gsap.to(".icon_dev", {
-      scrollTrigger: {
-        trigger: ".icon_dev",
-        start: "top 70%",
-        end: "top 55%",
-        scrub: 1,
-      },
+    tlIcons.to(".icon_dev", {
       scale: 1,
+      opacity: 1,
       duration: 0.5,
+      delay: 0.5,
     })
 
     // 4. BOTTOM ELLIPSE ANIMATION TIME LINE
@@ -137,11 +132,11 @@ function PlanningSvgAnimation() {
       <div className="absolute top-0 h-[26px] w-20 bg-white"></div>
       <div className="absolute bottom-0 h-[26px] w-20 bg-white"></div>
 
-      <IconPlan className="w-32 h-32 icon_plan absolute top-0 left-0" />
+      <IconPlan className="icon_plan w-40 h-40 absolute top-0 left-0 opacity-0" />
 
-      <IconDesign className="icon_design w-32 h-32 absolute top-0 left-0" />
+      <IconDesign className="icon_design w-40 h-40 absolute top-0 left-0 opacity-0" />
 
-      <IconDev className="icon_dev w-32 h-32 absolute top-0 left-0" />
+      <IconDev className="icon_dev w-40 h-40 absolute top-0 left-0 opacity-0" />
     </div>
   )
 }
